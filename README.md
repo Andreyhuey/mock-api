@@ -1,8 +1,8 @@
 # Mock API
 
-## description
+## Description
 The is a node project i use to create and serve json data like it's from a real API,
-it was inspired from the need of an API to build the UI of a project but the intended API was not ready so i had to improvise, i did some research and discovered faker-js[https://fakerjs.dev/guide/localization.html#available-locales], json-faker-schema[https://www.npmjs.com/package/json-schema-faker] and json-server[https://www.npmjs.com/package/json-server] which helped me create exactly what i needed for the front end of my project.
+it was inspired from the need of an API to build the UI of a project but the intended API was not ready so i had to improvise, i did some research and discovered [faker-js](https://fakerjs.dev/guide/localization.html#available-locales), [json-schema](https://json-schema.org/learn/getting-started-step-by-step) [json-faker-schema](https://www.npmjs.com/package/json-schema-faker) and [json-server](https://www.npmjs.com/package/json-server) which helped me create exactly what i needed for the front end of my project.
 
 ## How to install, configure and run
 The instructions are beginner friendly, just follow the steps and your are good to go.
@@ -35,7 +35,7 @@ Run the API by using
 interested in contributing? all you have to do is fork this repository, make your changes and make a pull request, i will review your changes and if it's alright, it will be merged.
 
 ### Questions?
-Are you curious about a thing or two concerning this project and you want to clear things up?? please send me an (email)[mailto:andreyhuey777@gmail.com]
+Are you curious about a thing or two concerning this project and you want to clear things up?? please send me an [email](mailto:andreyhuey777@gmail.com)
 
 
 
