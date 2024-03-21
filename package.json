@@ -1,0 +1,28 @@
+{
+  "name": "mockapi",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "generate-mock-data": "node src/generators/generateMockData",
+    "prestart-mockapi": "npm run generate-mock-data",
+    "start-mockapi": "json-server --watch dist/db.json --port 3000",
+    "": "",
+    "generate-kitcodes": "node src/generators/generateKitData",
+    "prestart-kitcodes": "npm run generate-kitcodes",
+    "start-kitcodes": "json-server --watch dist/kit-codes.json --port 5000",
+    "": ""
+  },
+  "keywords": [],
+  "author": "andreyhuey",
+  "license": "ISC",
+  "dependencies": {
+    "json-schema-faker": "^0.5.5",
+    "json-server": "^1.0.0-alpha.23"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "fs": "^0.0.1-security"
+  }
+}

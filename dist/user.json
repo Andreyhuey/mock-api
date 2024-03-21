@@ -1,0 +1,82 @@
+{
+  "users": [
+    {
+      "id": 65485558,
+      "name": "Arlie",
+      "email": "Rosalind62@gmail.com",
+      "age": 22
+    },
+    {
+      "id": 31654917,
+      "name": "Cruz",
+      "email": "Rico_Gibson-Deckow@hotmail.com",
+      "age": 69
+    },
+    {
+      "id": 98197232,
+      "name": "Carter",
+      "email": "Florida1@hotmail.com",
+      "age": 98
+    },
+    {
+      "id": 75447588,
+      "name": "Albina",
+      "email": "Birdie_Ankunding65@gmail.com",
+      "age": 18
+    },
+    {
+      "id": 83520437,
+      "name": "Bo",
+      "email": "Simeon.Swaniawski1@gmail.com",
+      "age": 72
+    },
+    {
+      "id": -30127080,
+      "name": "Frances",
+      "email": "Blair40@hotmail.com",
+      "age": 32
+    },
+    {
+      "id": 35877957,
+      "name": "Ryder",
+      "email": "Liliana_Hackett79@gmail.com",
+      "age": 37
+    },
+    {
+      "id": 52811661,
+      "name": "Erin",
+      "email": "Stanley_Bailey@yahoo.com",
+      "age": 27
+    },
+    {
+      "id": 25052228,
+      "name": "Christopher",
+      "email": "Anika_Feest14@yahoo.com",
+      "age": 48
+    },
+    {
+      "id": -89341985,
+      "name": "Federico",
+      "email": "Elissa.Cruickshank@yahoo.com",
+      "age": 88
+    },
+    {
+      "id": 75894522,
+      "name": "Amya",
+      "email": "Raphael_Pollich9@yahoo.com",
+      "age": 20
+    },
+    {
+      "id": 41027941,
+      "name": "Frances",
+      "email": "Johnson_Trantow@gmail.com",
+      "age": 25
+    },
+    {
+      "id": -11165389,
+      "name": "Nicolette",
+      "email": "Morris81@yahoo.com",
+      "age": 33
+    }
+  ]
+}
