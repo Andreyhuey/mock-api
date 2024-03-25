@@ -21,7 +21,8 @@ Congratulations, you're all set to generate your custom JSON data!
 Our project structure is designed for simplicity and efficiency:
 
 - **`/src/schema/`**: This directory houses your JSON schemas. Here, you define the structure, types, and volume of your desired mock data.
-- **`/src/generator/`**: This area is reserved for the json-schema-faker configurations. Utilize our provided templates or craft your own to generate the necessary JSON files.
+- **`/src/generators/`**: This area is reserved for the json-schema-faker configurations. Utilize our provided templates or craft your own to generate the necessary JSON files.
+
 
 ### Execution
 
@@ -37,6 +38,7 @@ To breathe life into your mock API, follow these steps:
    npm run start-mockapi
    ```
 
+- **`/dist/`**: This directory houses all the JSON data genrated from the execution of the process.
 
 
 ## Performance and Scalability
