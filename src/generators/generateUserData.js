@@ -1,6 +1,6 @@
 import jsf from "json-schema-faker";
 import schema from "../schema/userSchema.js";
-import { faker } from "@faker-js/faker";
+import { faker } from "@faker-js/faker/locale/en_NG";
 import fs from "fs";
 
 // Register faker as a custom format provider
@@ -15,3 +15,4 @@ fs.writeFile("./dist/user.json", json, function (err) {
     console.log("user data generated");
   }
 });
+

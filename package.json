@@ -12,7 +12,10 @@
     "generate-kitcodes": "node src/generators/generateKitData",
     "prestart-kitcodes": "npm run generate-kitcodes",
     "start-kitcodes": "json-server --watch dist/kit-codes.json --port 5000",
-    "": ""
+    "": "",
+    "generate-users": "node src/generators/generateUserData",
+    "prestart-users": "npm run generate-users",
+    "start-users": "json-server --watch dist/user.json --port 9999"
   },
   "keywords": [],
   "author": "andreyhuey",

@@ -8,9 +8,9 @@ const schema = {
       properties: {
         id: {
           type: "integer",
-          unique: true,
-          minimum: 1000,
-          maximum: 9999,
+          initialOffset: 1,
+          autoIncrement: ture,
+          
         },
         image: {
           type: "string",
