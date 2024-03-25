@@ -33,8 +33,10 @@ To breathe life into your mock API, follow these steps:
    - **`prestart-mockapi`**: This script generates the JSON data file.
    - **`start-mockapi`**: Define the path to the generated JSON data and the port for your mock server.
 3. Launch your mock API with:
+   
    ```sh
    npm run start-mockapi
+   ```
 
 
 
