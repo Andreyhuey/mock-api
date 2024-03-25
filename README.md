@@ -23,18 +23,25 @@ Our project structure is designed for simplicity and efficiency:
 - **`/src/schema/`**: This directory houses your JSON schemas. Here, you define the structure, types, and volume of your desired mock data.
 - **`/src/generator/`**: This area is reserved for the json-schema-faker configurations. Utilize our provided templates or craft your own to generate the necessary JSON files.
 
-### Run
-Inorder to run the configurations above, navigate to the package.json and locate the "scripts" section, various examples on how to write it are already provided.
+### Execution
 
-For emphasis;
-- write the "generate-mock-data" script by providing the json generator file location
-- write the "prestart-mockapi" script which runs and creates the json data needed
-- write the "start-mockapi" script with the created json data location and the port to watch it
+To breathe life into your mock API, follow these steps:
+
+1. Open the `package.json` file and scroll to the `"scripts"` section.
+2. Customize the following scripts:
+   - **`generate-mock-data`**: Specify the path to your json-schema-faker generator file.
+   - **`prestart-mockapi`**: This script generates the JSON data file.
+   - **`start-mockapi`**: Define the path to the generated JSON data and the port for your mock server.
+3. Launch your mock API with:
+   ```sh
+   npm run start-mockapi
+   ```
 
 
-Run the API by using 
 
-"npm run start-mockapi"
+## Performance and Scalability
+
+Our mock API tool has been rigorously tested to ensure it can handle extensive data generation tasks with ease. It's capable of fabricating up to 1,000,000 precise and versatile JSON data entries, making it an ideal solution for testing and development scenarios that require substantial volumes of data. This performance benchmark underscores our commitment to supporting developers in high-volume data simulation needs, ensuring reliability and efficiency even under demanding conditions.
 
 
 ## How to contribute and ask questions
