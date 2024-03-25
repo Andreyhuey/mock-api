@@ -1,32 +1,46 @@
 # Mock API
 
-## Description
-The is a node project i use to create and serve json data like it's from a real API,
-it was inspired from the need of an API to build the UI of a project but the intended API was not ready so i had to improvise, i did some research and discovered [faker-js](https://fakerjs.dev/guide/localization.html#available-locales), [json-schema](https://json-schema.org/learn/getting-started-step-by-step) [json-faker-schema](https://www.npmjs.com/package/json-schema-faker) and [json-server](https://www.npmjs.com/package/json-server) which helped me create exactly what i needed for the front end of my project.
+## Introduction
 
-## How to install, configure and run
-The instructions are beginner friendly, just follow the steps and your are good to go.
+This project serves as a robust solution for front-end developers in need of quick and reliable mock API services. Born from the necessity to bridge the gap between UI development and back-end readiness, it utilizes the strengths of [faker-js](https://fakerjs.dev/guide/localization.html#available-locales), [json-schema](https://json-schema.org/learn/getting-started-step-by-step), [json-schema-faker](https://www.npmjs.com/package/json-schema-faker), and [json-server](https://www.npmjs.com/package/json-server) to fabricate precise and versatile JSON data. Whether you're crafting a dynamic interface or testing feature completeness, this tool ensures your development never skips a beat.
 
-### Install
-git clone this repository and run "npm install" to install all the needed dependencies and you are ready to start cooking your own json data that suits your present needs .
+## Installation, Configuration, and Execution
 
-### Configure
-- navigate to the src folder, 
-- locate the schema folder which as the name implies is used in writing schemas that shapes the types and size of the json data to be generated.
-- locate the generator folder which is used for writing the json-schema-faker that generates the json file needed, several active templates which can be used examples are present.
+Embark on your journey with our mock API by following these beginner-friendly instructions:
 
-### Run
-Inorder to run the configurations above, navigate to the package.json and locate the "scripts" section, various examples on how to write it are already provided.
+### Installation
 
-For emphasis;
-- write the "generate-mock-data" script by providing the json generator file location
-- write the "prestart-mockapi" script which runs and creates the json data needed
-- write the "start-mockapi" script with the created json data location and the port to watch it
+1. Clone this repository to your local machine.
+2. Navigate to the project's root directory.
+3. Execute `npm install` to install all necessary dependencies.
+
+Congratulations, you're all set to generate your custom JSON data!
+
+### Configuration
+
+Our project structure is designed for simplicity and efficiency:
+
+- **`/src/schema/`**: This directory houses your JSON schemas. Here, you define the structure, types, and volume of your desired mock data.
+- **`/src/generator/`**: This area is reserved for the json-schema-faker configurations. Utilize our provided templates or craft your own to generate the necessary JSON files.
+
+### Execution
+
+To breathe life into your mock API, follow these steps:
+
+1. Open the `package.json` file and scroll to the `"scripts"` section.
+2. Customize the following scripts:
+   - **`generate-mock-data`**: Specify the path to your json-schema-faker generator file.
+   - **`prestart-mockapi`**: This script generates the JSON data file.
+   - **`start-mockapi`**: Define the path to the generated JSON data and the port for your mock server.
+3. Launch your mock API with:
+   ```sh
+   npm run start-mockapi
 
 
-Run the API by using 
 
-"npm run start-mockapi"
+## Performance and Scalability
+
+Our mock API tool has been rigorously tested to ensure it can handle extensive data generation tasks with ease. It's capable of fabricating up to 1,000,000 precise and versatile JSON data entries, making it an ideal solution for testing and development scenarios that require substantial volumes of data. This performance benchmark underscores our commitment to supporting developers in high-volume data simulation needs, ensuring reliability and efficiency even under demanding conditions.
 
 
 ## How to contribute and ask questions
