@@ -12,20 +12,22 @@
     "generate-kitcodes": "node src/generators/generateKitData",
     "prestart-kitcodes": "npm run generate-kitcodes",
     "start-kitcodes": "json-server --watch dist/kit-codes.json --port 5000",
-    "": "",
     "generate-users": "node src/generators/generateUserData",
     "prestart-users": "npm run generate-users",
-    "start-users": "json-server --watch dist/user.json --port 9999"
+    "start-users": "json-server --watch dist/user.json --port 9999",
+    "test": "jest"
   },
   "keywords": [],
   "author": "andreyhuey",
   "license": "ISC",
   "dependencies": {
     "json-schema-faker": "^0.5.5",
-    "json-server": "^1.0.0-alpha.23"
+    "json-server": "^1.0.0-alpha.23",
+    "supertest": "^6.3.4"
   },
   "devDependencies": {
     "@faker-js/faker": "^8.4.1",
-    "fs": "^0.0.1-security"
+    "fs": "^0.0.1-security",
+    "jest": "^29.7.0"
   }
 }

@@ -43,6 +43,10 @@ To breathe life into your mock API, follow these steps:
 - **`/dist/`**: This directory contains all the JSON data generated through the execution process. It serves as the repository for your mock data, ready for use.
 - Ports: The generated JSON data is hosted on a specified port. This setup allows for direct CRUD (Create, Read, Update, Delete) operations from your localhost, facilitating seamless integration and testing within your development environment.
 
+### Tests
+Jest testing framework was utilized here.
+
+several tests cases were written inorder to verfiy the functionality of the json-server, it passed the GET, PUT & DELETE operations in flying colors, but the POST requests had data consistency (types and schema struture) issues.
 
 
 ## Performance and Scalability
