@@ -12,6 +12,6 @@ fs.writeFile("./dist/notifs.json", json, function (err) {
   if (err) {
     return console.error(err);
   } else {
-    console.log("notifs generated");
+    console.log("notifications data generated");
   }
 });

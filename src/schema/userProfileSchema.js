@@ -9,7 +9,7 @@ const schema = {
         id: {
           type: "integer",
           initialOffset: 1,
-          autoIncrement: ture,
+          autoIncrement: true,
           
         },
         image: {
@@ -81,4 +81,4 @@ const schema = {
   },
 };
 
-export default schema;
+module.exports =  schema;

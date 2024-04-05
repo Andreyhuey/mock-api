@@ -8,10 +8,10 @@ jsf.extend("faker", () => faker);
 
 const json = JSON.stringify(jsf.generate(schema));
 
-fs.writeFile("./dist/deliveries-data.json", json, function (err) {
+fs.writeFile("./dist/deliveries.json", json, function (err) {
   if (err) {
     return console.error(err);
   } else {
-    console.log("admin data generated");
+    console.log("deliveries data generated");
   }
 });
