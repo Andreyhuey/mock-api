@@ -36,7 +36,15 @@ Embark on your journey with our mock API by following these beginner-friendly in
 
 1. Clone this repository to your local machine.
 2. Navigate to the project's root directory.
-3. Execute `npm install` to install all necessary dependencies.
+3. Execute the code below in your terminal to install all necessary dependencies.
+
+```sh
+npm install json-server json-schema-faker
+```
+
+```sh
+npm install --save-dev @faker-js/faker fs jest
+```
 
 Congratulations, you're all set to generate your custom JSON data!
 

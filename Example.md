@@ -19,7 +19,11 @@ git clone https://github.com/Andreyhuey/mock-api.git
 2. To install the needed dependencies, run the code below in your terminal
 
 ```sh
-npm install
+npm install json-server json-schema-faker
+```
+
+```sh
+npm install --save-dev @faker-js/faker fs jest
 ```
 
 3. write your schema,
