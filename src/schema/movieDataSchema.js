@@ -11,9 +11,8 @@ const schema = {
         type: "object",
         properties: {
           id: {
-            type: "number",
-            unique: true,
-            minimum: 1,
+            type: "string",
+            faker: "string.uuid",
           },
           name: {
             type: "string",

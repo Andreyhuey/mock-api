@@ -12,11 +12,16 @@
     "generate-kitcodes": "node src/generators/generateKitData",
     "prestart-kitcodes": "npm run generate-kitcodes",
     "start-kitcodes": "json-server --watch dist/kit-codes.json --port 5000",
+    "": "",
     "generate-users": "node src/generators/generateUserData",
     "prestart-users": "npm run generate-users",
     "start-users": "json-server --watch dist/user.json --port 9999",
-    "test": "jest",
-    "generate-notifs": "node src/generators/generateNotifications"
+    "": "",
+    "generate-users-profile": "node src/generators/generateUserProfileData",
+    "prestart-users-profile": "npm run generate-users-profile",
+    "start-users-profile": "json-server --watch dist/user-profile.json --port 4000",
+    "generate-notifs": "node src/generators/generateNotifications",
+    "test": "jest"
   },
   "keywords": [],
   "author": "andreyhuey",

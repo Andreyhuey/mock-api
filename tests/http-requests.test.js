@@ -1,3 +1,6 @@
+// inorder to run this test please ensure that you run in your terminal `npm run start-users`;
+
+
 const supertest = require("supertest"); // Library for making HTTP requests for testing
 
 describe("GET /users endpoint", () => {
@@ -11,10 +14,9 @@ describe("GET /users endpoint", () => {
 describe("POST /users endpoint", () => {
   it("should create a user", async () => {
     const newUser = {
-      name: "Ola-Obaado",
+      name: "Ola-Obaado Oluwadara",
       email: "andreyhuey777@gmail.com",
       age: 22,
-      height: 183
     };
 
     const response = await supertest("http://localhost:9999")
@@ -29,12 +31,14 @@ describe("POST /users endpoint", () => {
   });
 })
 
+// Note takes the user id into consideration so please ensure to replace it with an id present in the localhost:9999/user endpoint
 describe("PUT /users/:id endpoint", () => {
   it("should update a user", async () => {
-    const userId = 1; // Replace with an actual user ID
+    const userId = "c5807c5b-86d0-4d92-947c-ca067e9218bd"; // Replace with an actual user ID
     const updatedUserData = {
       name: "Justina abigail",
       email: "john.doe@gmail.com",
+      age: 34
     };
 
     const response = await supertest("http://localhost:9999")
@@ -51,29 +55,29 @@ describe("PUT /users/:id endpoint", () => {
   });
 });
 
-// describe("DELETE /users/:id endpoint", () => {
-//   it("should delete a user", async () => {
-//     const userId = 45;
+describe("DELETE /users/:id endpoint", () => {
+  it("should delete a user", async () => {
+    const userId = "bc4d5b6d-4f90-4969-9157-c1c19b4f264b";
 
-//     const response = await supertest("http://localhost:9999")
-//       .delete(`/users/${userId}`)
-//       .expect(200); // Expect success status code
+    const response = await supertest("http://localhost:9999")
+      .delete(`/users/${userId}`)
+      .expect(200); // Expect success status code
 
-//     // Verify that the response body is empty (optional)
-//     expect(response.body).toEqual({
-//       id: "45",
-//       name: "Johnson",
-//       email: "Johnson_Latifat80@hotmail.com",
-//       age: 21,
-//     });
-//      // Assuming the response body is empty for successful deletion
+    // Verify that the response body is empty (optional)
+    expect(response.body).toEqual({
+      id: "bc4d5b6d-4f90-4969-9157-c1c19b4f264b",
+      name: "Buchi",
+      email: "Akanni.Aremu54@hotmail.com",
+      age: 44,
+    });
+     // Assuming the response body is empty for successful deletion
 
-//     // You can also check if the user was deleted successfully by sending another request to fetch the user
-//     // For example, you can expect a 404 status code if the user is not found after deletion
-//     await supertest("http://localhost:9999")
-//       .get(`/users/${userId}`)
-//       .expect(404); // Expect user not found
-//   });
-// });
+    // You can also check if the user was deleted successfully by sending another request to fetch the user
+    // For example, you can expect a 404 status code if the user is not found after deletion
+    await supertest("http://localhost:9999")
+      .get(`/users/${userId}`)
+      .expect(404); // Expect user not found
+  });
+});
 
 

@@ -6,10 +6,10 @@ const schema = {
     items: {
       type: "object",
       properties: {
+        
         id: {
-          type: "integer",
-          initialOffset: 1,
-          autoIncrement: true,
+          type: "string",
+          faker: "string.uuid",
         },
         firstName: {
           type: "string",

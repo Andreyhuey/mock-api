@@ -1,15 +1,14 @@
 const schema = {
-  users: {
+  profile: {
     type: "array",
-    minItems: 10,
-    maxItems: 25,
+    minItems: 100,
+    maxItems: 100,
     items: {
       type: "object",
       properties: {
         id: {
           type: "string",
           faker: "string.uuid",
-          
         },
         image: {
           type: "string",
@@ -80,4 +79,4 @@ const schema = {
   },
 };
 
-export default schema;
+export default schema

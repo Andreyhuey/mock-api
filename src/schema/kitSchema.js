@@ -8,9 +8,8 @@ const schema = {
       type: "object",
       properties: {
         id: {
-          type: "integer",
-          initialOffset: 1,
-          autoIncrement: true,
+          type: "string",
+          faker: "string.uuid",
         },
         testType: {
           type: "string",

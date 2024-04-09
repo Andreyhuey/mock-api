@@ -17,11 +17,22 @@ This Mock API project tackles this challenge head-on by offering a seamless solu
 
 This user-friendly solution empowers developers to quickly generate and serve customized mock APIs, significantly boosting development efficiency and facilitating robust testing practices.
 
-## Installation, Configuration, Execution, Results & Tests
+## Requirements, Example, Installation, Configuration, Execution, Results & Tests
 
-Embark on your journey with our mock API by following these beginner-friendly instructions:
+### Requirements
+
+You need the following below to run this on your pc, so please ensure to download
+
+- Node.js 18.0.0 or higher
+- Git
+
+### Example
+
+A practical & indepth example of how to write your own mock api [Example.md](/Example.md)
 
 ### Installation
+
+Embark on your journey with our mock API by following these beginner-friendly instructions:
 
 1. Clone this repository to your local machine.
 2. Navigate to the project's root directory.
@@ -57,7 +68,9 @@ To breathe life into your mock API, follow these steps:
 
 ### Tests
 
-The Jest testing framework was utilized to thoroughly evaluate the functionalities of the json-server. The tests successfully validated GET, PUT, and DELETE operations. However, some data consistency issues (types and schema structure) were identified with POST requests. Efforts are underway to address these discrepancies.
+![](./src/assets/json-server-test.png)
+
+Jest testing framework was utilized to thoroughly evaluate the functionalities of the json-server. The tests successfully validated GET, PUT, and DELETE operations.
 
 ## Performance and Scalability
 
@@ -80,3 +93,5 @@ Looking forward to your creative and insightful contributions!
 ### Questions?
 
 Curious about something concerning this project and want to clear things up? Please send me an [email](mailto:andreyhuey777@gmail.com), or feel free to open an issue in the project's GitHub issue tracker for more detailed questions or suggestions.
+
+project stars are greately appreciated :)
