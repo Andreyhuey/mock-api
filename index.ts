@@ -7,7 +7,7 @@ const imageArray = Array.from({ length: 25 }, () => generateRandomAvatar());
 
 const json = JSON.stringify(imageArray);
 
-fs.writeFile("./distimages.json", json, function (err) {
+fs.writeFile("./dist/images.json", json, function (err) {
   if (err) {
     return console.log(err);
   } else {

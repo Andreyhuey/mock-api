@@ -2,7 +2,7 @@
   "name": "mockapi",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
+  "type": "commonjs",
   "main": "index.js",
   "scripts": {
     "generate-mock-data": "node src/generators/generateMockData",
@@ -12,11 +12,12 @@
     "generate-kitcodes": "node src/generators/generateKitData",
     "prestart-kitcodes": "npm run generate-kitcodes",
     "start-kitcodes": "json-server --watch dist/kit-codes.json --port 5000",
-    "": "",
     "generate-users": "node src/generators/generateUserData",
     "prestart-users": "npm run generate-users",
     "start-users": "json-server --watch dist/user.json --port 9999",
-    "": "",
+    "generate-labtests": "node src/generators/generateAdvancedLabTests",
+    "prestart-labtests": "npm run generate-labtests",
+    "start-labtests": "json-server --watch dist/user.json --port 9214",
     "generate-users-profile": "node src/generators/generateUserProfileData",
     "prestart-users-profile": "npm run generate-users-profile",
     "start-users-profile": "json-server --watch dist/user-profile.json --port 4000",
@@ -33,8 +34,10 @@
   },
   "devDependencies": {
     "@faker-js/faker": "^8.4.1",
+    "@types/jest": "^29.5.12",
     "fs": "^0.0.1-security",
     "jest": "^29.7.0",
-    "jest-localstorage-mock": "^2.4.26"
+    "jest-localstorage-mock": "^2.4.26",
+    "typescript": "^5.4.5"
   }
 }

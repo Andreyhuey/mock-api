@@ -1,3 +1,6 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
 const schema = {
   codes: {
     type: "array",
@@ -37,5 +40,4 @@ const schema = {
     },
   },
 };
-
-export default schema;
+exports.default = schema;
