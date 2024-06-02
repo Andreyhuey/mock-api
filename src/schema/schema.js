@@ -1,3 +1,13 @@
+// export type TestsListType = {
+//   id: number;
+//   name: string;
+//   icon: string;
+//   caption: string;
+//   date_created: string;
+//   date_updated: string;
+//   status: string;
+// };
+
 const schema = {
   codes: {
     type: "array",
